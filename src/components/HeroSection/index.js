@@ -23,7 +23,7 @@ const HeroSection = () => {
   return (
     <HeroContainer id='home'>
         <HeroBg>
-            <ImgBg src={Image} />
+            <ImgBg src={Image} alt='Candle' />
         </HeroBg>
         <HeroContent>
             <HeroH1>Welcome to the App</HeroH1>

@@ -1,5 +1,6 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa'
+import { animateScroll as scroll } from 'react-scroll'
 import {
   Nav,
   NavbarContainer,
@@ -13,13 +14,24 @@ import {
 } from './NavbarElements'
 
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
+  const toggleHome = () => {
+    scroll.scrollToTop()
+  }
+
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to='/'>Logo</NavLogo>
-          <MobileIcon>
+          <NavLogo 
+            to='/'
+            onClick={toggleHome}
+          >
+            Logo
+          </NavLogo>
+          <MobileIcon
+            onClick={toggle}
+          >
             <FaBars />
           </MobileIcon>
           <NavMenu>

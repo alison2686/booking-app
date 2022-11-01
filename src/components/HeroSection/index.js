@@ -32,6 +32,7 @@ const HeroSection = () => {
             </HeroP>
             <HeroBtnWrapper>
                 <Button
+                    to='services'
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
                     primary='true'
@@ -42,7 +43,7 @@ const HeroSection = () => {
                     exact='true' 
                     offset={-80}                        
                 >
-                    Book an Appointment {hover ? <ArrowForward /> : <ArrowRight />}
+                    See our Services {hover ? <ArrowForward /> : <ArrowRight />}
                 </Button>
             </HeroBtnWrapper>
         </HeroContent>

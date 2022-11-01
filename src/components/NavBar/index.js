@@ -52,7 +52,6 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks 
                 to='services'
-                scrollNav={scrollNav}
                 smooth={true} 
                 duration={500} 
                 spy={true} 
